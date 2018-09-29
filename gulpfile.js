@@ -6,6 +6,8 @@ gulp.task('browserSync', function() {
         server: {
             baseDir: './',
         },
+        // Change the default port
+        port: 8000,
     });
 });
 
@@ -14,5 +16,5 @@ gulp.task('watch', ['browserSync'], function() {
     gulp.watch('css/*.css', browserSync.reload);
     gulp.watch('index.html', browserSync.reload);
     gulp.watch('restaurant.html', browserSync.reload);
-    gulp.watch('data/*.json', browserSync.reload);
+    gulp.watch('data/restaurants.json', browserSync.reload);
 });
