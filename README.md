@@ -34,4 +34,3 @@ The service worker was implemented with the help of the great tutorials at https
 ### License
 
 This repository is licensed under the [MIT license](https://opensource.org/licenses/MIT).
-For further information see [LICENSE](LICENSE)
