@@ -1,8 +1,10 @@
 importScripts('./cache-polyfill.js');
 
+const CACHE_NAME = 'restaurant-reviews-v2';
+
 self.addEventListener('install', function(e) {
     e.waitUntil(
-        caches.open('restaurantReviews').then(function(cache) {
+        caches.open('CACHE_NAME').then(function(cache) {
             return cache.addAll([
                 './',
                 './index.html',
@@ -22,6 +24,16 @@ self.addEventListener('install', function(e) {
                 './img/8.jpg',
                 './img/9.jpg',
                 './img/10.jpg',
+                './Restaurant-Reviews-App/restaurant.html?id=1',
+                './Restaurant-Reviews-App/restaurant.html?id=2',
+                './Restaurant-Reviews-App/restaurant.html?id=3',
+                './Restaurant-Reviews-App/restaurant.html?id=4',
+                './Restaurant-Reviews-App/restaurant.html?id=5',
+                './Restaurant-Reviews-App/restaurant.html?id=6',
+                './Restaurant-Reviews-App/restaurant.html?id=7',
+                './Restaurant-Reviews-App/restaurant.html?id=8',
+                './Restaurant-Reviews-App/restaurant.html?id=9',
+                './Restaurant-Reviews-App/restaurant.html?id=10',
             ]);
         })
     );
