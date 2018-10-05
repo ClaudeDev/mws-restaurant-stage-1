@@ -5,7 +5,7 @@
 
 * [Project Overview](#project-overview)
 * [Live View](#live-view)
-* [Installation with Python server](#installation)
+* [Installation with Python server](#installation-with-python-server)
 * [Credits](#credits)
 * [License](#license)
 
