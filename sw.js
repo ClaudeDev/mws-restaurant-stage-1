@@ -1,4 +1,4 @@
-importScripts('/cache-polyfill.js');
+importScripts('./cache-polyfill.js');
 
 const CACHE_NAME = 'restaurant-reviews-v2';
 
